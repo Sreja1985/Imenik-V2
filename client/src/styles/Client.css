@@ -1,0 +1,37 @@
+@import url("../styles/JumpTop.css");
+@import url("../styles/Navbar.css");
+@import url("../styles/Footer.css");
+@import url("../styles/Admin.css");
+
+
+body {
+  background-color: darkgrey;
+}
+
+.page {
+  margin-top: 4rem;
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  /*height: 90vh; /* Full viewport height, or adjust as needed */
+  padding: 8rem 6rem;
+  color: black;
+}
+
+@media screen and (max-width: 992px) {
+  .page {
+    padding: 6rem 4rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .page {
+    padding: 4rem 2rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .page {
+    padding: 2rem 1rem;
+  }
+}

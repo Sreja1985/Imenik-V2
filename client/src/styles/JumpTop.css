@@ -1,0 +1,20 @@
+.jumptop {
+  width: 2rem;
+  height: 2rem;
+  cursor: pointer;
+  position: fixed;
+  top: 50%;
+}
+
+.jumptop:hover {
+  color: aliceblue;
+}
+
+@media screen and (max-width: 576px) {
+  .jumptop {
+    top: auto; /* Reset top position */
+    left: 50%; /* Center horizontally */
+    bottom: 5%; /* 10% from the bottom */
+    transform: translateX(-50%); /* Center the button horizontally */
+  }
+}

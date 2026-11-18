@@ -1,0 +1,128 @@
+.NavbarItems {
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 9999;
+  padding: 0 30px;
+  box-shadow: 0 5px 15px 0 rgb(0, 0, 0, 0.3);
+  width: 100%;
+  height: 80px;  
+  position: fixed;
+  left: 50%;
+  transform: translate(-50%);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.navbar__logo {
+  color: #333;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.nav__menu {
+  margin-top: 15px;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-gap: 10px;
+  list-style: none;
+  align-items: center;
+}
+
+.nav__links {
+  text-decoration: none;
+  color: #333;
+  font-size: 1.4rem;
+  letter-spacing: 0.1rem;
+  padding: 0.7rem 1.5rem;
+  white-space: nowrap;
+  border-radius: 10px;
+}
+
+.nav__links:hover {
+  background-color: #3eefb4;
+  color: #fff;
+  transition: all 0.2s ease-in-out;
+  text-decoration: none;
+}
+
+.activated {
+  background-color: #09def1;
+  opacity: 0.8;
+}
+
+.menu__icons {
+  display: none;
+}
+
+@media screen and (max-width: 768px) { /*max-width:850px*/
+  .NavbarItems {
+    z-index: 9999;
+    position: fixed;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+
+  .navbar__logo {
+    font-size: 1.5rem;
+  }
+
+  .nav__menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Center items vertically */
+    align-items: center; /* Center items horizontally */
+    background-color: #ffffff;
+    width: 100%;
+    height: auto;
+    position: absolute;
+    grid-gap: 0px;
+    top: 0;
+    left: -1000%; /* Keeps the menu hidden off-screen by default */
+    align-items: stretch;
+    opacity: 1;
+    padding: 80px 0 0 0;
+    margin: 0;
+    transition: 0.3s ease-in-out;
+    border-radius: 15px;
+  }
+
+  .nav__menu li:last-child :hover,
+  .nav__menu li:last-child .activated {
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+  }
+
+  .nav__menu.active {
+    left: 0;
+    opacity: 1;
+    z-index: -1;
+    transition: 0.3s ease-in-out;
+  }
+
+  .nav__links {
+    display: block;
+    width: 100%;
+    font-size: 1.2rem;
+    text-align: center; /* Center text within each link */
+    padding: 2rem 0;
+    top: 0;
+    border-radius: 0px;
+  }
+
+  .nav__links:hover {
+    background-color: #3eefb4;
+    transition: none;
+    margin: 0;
+  }
+
+  .menu__icons {
+    display: block;
+    cursor: pointer;
+    font-size: 1.2rem;
+    color: #333;
+  }
+}

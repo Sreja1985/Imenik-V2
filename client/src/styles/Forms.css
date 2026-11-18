@@ -1,0 +1,47 @@
+form {
+  max-width: auto; /* Optional: limits the form width */
+  padding: 10px;
+  /*background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: adds a subtle shadow */
+  border-radius: 10px; /* Optional: rounded corners */
+}
+
+.form-admin {
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  color: black;
+}
+
+.link-button {
+  text-decoration: none;
+  color: #fff;
+}
+
+.link-button :hover {
+  color: #fff;
+}
+
+.required {
+  color: red;
+}
+
+.is-invalid-select div {
+    background-color: #fff0f0 !important;
+}
+
+
+
+
+
+@media screen and (max-width: 992px) {
+}
+/* Small <= 768px */
+
+@media screen and (max-width: 768px) {
+}
+
+/* Extra Small <= 576px */
+
+@media screen and (max-width: 576px) {
+}

@@ -1,0 +1,38 @@
+.footer {
+    padding: 1rem 6rem;
+    color: #333;
+    margin-top: 4rem; /* Adds space above the footer */
+    text-align: center; /* Centers text within the footer */
+    width: 100%; /* Ensures the footer spans the full width of the screen */
+    display: flex; /* Use Flexbox layout */
+    justify-content: center; /* Centers content horizontally */
+    align-items: center; /* Centers content vertically */
+    flex-direction: column; /* Stack footer elements vertically if there are multiple */
+    box-sizing: border-box; /* Includes padding in the width and height calculations */
+}
+
+
+.link {
+    text-decoration: none;
+    color: #333;
+    padding-bottom: .4rem;
+    font-size: 1.1rem;
+}
+
+.link:hover{
+    text-decoration: none;    
+}
+
+.bottom {
+    text-align: center;
+    font-size: 0.9rem;
+    flex-wrap: wrap;
+}
+
+@media screen and (max-width: 576px) {
+    .footer {
+        padding: 1rem 2rem;
+        margin-top: 1rem;
+       
+    }    
+}
